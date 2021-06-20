@@ -3,6 +3,7 @@
 from selenium import webdriver
 browser = webdriver.Chrome('./chromedriver')
 
+# Change "Joensuu" to your finnish city name to see other results.
 browser.get('https://www.supersaa.fi/suomi/joensuu/')
 
 date  = browser.find_element_by_xpath('/html/body/div[2]/div[2]/div[1]/article/h2')
